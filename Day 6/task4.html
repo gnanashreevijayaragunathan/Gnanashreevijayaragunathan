@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <center>
+  <h1> Finance Tracker</h1>
+
+  <div class="controls">
+    <label>
+      Start Date:
+      <input type="date" id="startDate">
+    </label>
+
+    <label>
+      End Date:
+      <input type="date" id="endDate">
+    </label>
+
+    <label>
+      High Spend ≥
+      <input type="number" id="highSpend" value="500">
+    </label>
+
+    <button id="exportBtn">Export JSON</button>
+  </div>
+
+  <h2>Balance: <span id="balance">$0</span></h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Category</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody id="transactions"></tbody>
+  </table>
+  </center>
+
+  <script src="script.js"></script>
+</body>
+</html>
